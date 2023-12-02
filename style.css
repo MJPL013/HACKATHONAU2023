@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #7071E8;
+    margin: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #000000;
+    align-self: start;
+}
+
+form {
+    max-width: 650px;
+    margin: 0 auto;
+    background-color: #fdd9d9;
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.category-group {
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.2); /* Transparency effect */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Glass effect */
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.category-group:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Hover effect color */
+}
+
+input[type="text"], input[type="submit"], button {
+    padding: 7px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    background-color: #ededed;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    color: #666;
+}
+
+input[type="checkbox"] {
+    margin-right: 50px;
+}
+
+.category-group {
+    margin-bottom: 20px;
+}
