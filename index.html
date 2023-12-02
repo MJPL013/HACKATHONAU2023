@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Compatibility Checker</title>
+    <link rel="stylesheet" type="text/css" href="static/styles/style.css">
+</head>
+<body>
+    <h1>User Categories selection</h1>
+    <form method="post">
+        <label for="userName">Your Name:</label>
+        <input type="text" id="userName" name="userName">
+
+        <div class="category-group">
+            <h2>Art</h2>
+            <label>
+                <input type="checkbox" class="selectAllCheckbox" data-category="Art" value="Art"> Select All
+            </label>
+            {% for option in categories["Art"] %}
+                <label>
+                    <input type="checkbox" name="options" data-category="Art" value="{{ option }}"> {{ option }}
+                </label>
+            {% endfor %}
+        </div>
+
+        <div class="category-group">
+            <h2>Sports</h2>
+            <label>
+                <input type="checkbox" class="selectAllCheckbox" data-category="Sports" value="Sports"> Select All
+            </label>
+            {% for option in categories["Sports"] %}
+                <label>
+                    <input type="checkbox" name="options" data-category="Sports" value="{{ option }}"> {{ option }}
+                </label>
+            {% endfor %}
+        </div>
+
+        <div class="category-group">
+            <h2>Gaming</h2>
+            <label>
+                <input type="checkbox" class="selectAllCheckbox" data-category="Gaming" value="Gaming"> Select All
+            </label>
+            {% for option in categories["Gaming"] %}
+                <label>
+                    <input type="checkbox" name="options" data-category="Gaming" value="{{ option }}"> {{ option }}
+                </label>
+            {% endfor %}
+        </div>
+
+        <div class="category-group">
+            <h2>D</h2>
+            <label>
+                <input type="checkbox" class="selectAllCheckbox" data-category="D" value="D"> Select All
+            </label>
+            {% for option in categories["D"] %}
+                <label>
+                    <input type="checkbox" name="options" data-category="D" value="{{ option }}"> {{ option }}
+                </label>
+            {% endfor %}
+        </div>
+
+        <div class="category-group">
+            <h2>Reading</h2>
+            <label>
+                <input type="checkbox" class="selectAllCheckbox" data-category="Reading" value="Reading"> Select All
+            </label>
+            {% for option in categories["Reading"] %}
+                <label>
+                    <input type="checkbox" name="options" data-category="Reading" value="{{ option }}"> {{ option }}
+                </label>
+            {% endfor %}
+        </div>
+
+        <div class="category-group">
+            <h2>Programming and Coding</h2>
+            <label>
+                <input type="checkbox" class="selectAllCheckbox" data-category="Programming and Coding" value="Programming and Coding"> Select All
+            </label>
+            {% for option in categories["Programming and Coding"] %}
+                <label>
+                    <input type="checkbox" name="options" data-category="Programming and Coding" value="{{ option }}"> {{ option }}
+                </label>
+            {% endfor %}
+        </div>
+
+        <!-- Repeat the above for other categories -->
+
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h1>Click the button to get your location</h1>
+    <button id="getLocationBtn">Get Location</button>
+    <script>
+        // ... (unchanged JavaScript code)
+    </script>
+</body>
+</html>

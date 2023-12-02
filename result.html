@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compatibility Result</title>
+    <link rel= "stylesheet" type= "text/css" href= "static/styles/style2.css">
+
+
+</head>
+<body>
+    <h1>Compatibility Result</h1>
+    <p>Your selected options: {{ selected_options }}</p>
+    <p>Compatibility Scores:</p>
+    <ul>
+        {% for user, score in compatibility_scores.items() %}
+            <li>{{ user }}: {{ score }} common options (Selected: {{ user_data[user] }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
